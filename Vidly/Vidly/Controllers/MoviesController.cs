@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Owin.Security.Provider;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
@@ -23,9 +24,25 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
+        protected override void Dispose(bool disposing)
+        {
+            _DBContext.Dispose();
+        }
+
+
         public ActionResult Edit(int id)
         {
-            return Content("id=" + id);
+            var movie = _DBContext.Movies.SingleOrDefault(m => m.Id == id);
+
+            if (movie == null) return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel
+            {
+                Genres = _DBContext.Genres.ToList(),
+                Movie = movie
+            };
+
+            return View("MovieForm", viewModel);
         }
 
         public ActionResult Index()
@@ -33,6 +50,19 @@ namespace Vidly.Controllers
             var movies = _DBContext.Movies.Include(m => m.Genre).ToList();
 
             return View(movies);
+        }
+
+        public ActionResult New()
+        {
+            var genres = _DBContext.Genres.ToList();
+
+            var viewModel = new MovieFormViewModel
+            {
+                Movie = new Movie { Id = 0},
+                Genres = genres
+            };
+
+            return View("MovieForm", viewModel);
         }
 
         public ActionResult Random()
@@ -51,6 +81,30 @@ namespace Vidly.Controllers
             };
 
             return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            // New movie
+            if (movie.Id == 0)
+            {
+                _DBContext.Movies.Add(movie);
+            }
+            // Existing movie
+            else
+            {
+                var existingMovie = _DBContext.Movies.Single(m => m.Id == movie.Id);
+
+                existingMovie.Name = movie.Name;
+                existingMovie.ReleaseDate = movie.ReleaseDate;
+                existingMovie.GenreId = movie.GenreId;
+                existingMovie.NumberInStock = movie.NumberInStock;
+            }
+
+            _DBContext.SaveChanges();
+
+            return RedirectToAction("Index", "Movies");
         }
 
         [Route("movies/released/{year}/{month:regex(\\d{2}):range(1, 12)}")]

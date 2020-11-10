@@ -110,3 +110,5 @@ D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csproj.Genera
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenres.resources
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMoviesTable.resources
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.ChangeDataTypes.resources
