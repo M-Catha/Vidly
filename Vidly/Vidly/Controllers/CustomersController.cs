@@ -77,7 +77,6 @@ namespace Vidly.Controllers
                 return View("CustomerForm", viewModel);
             }
 
-
             // New customer
             if (customer.Id == 0)
             {

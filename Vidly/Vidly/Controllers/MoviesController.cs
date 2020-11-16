@@ -1,4 +1,4 @@
-﻿using Microsoft.Owin.Security.Provider;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -36,10 +36,9 @@ namespace Vidly.Controllers
 
             if (movie == null) return HttpNotFound();
 
-            var viewModel = new MovieFormViewModel
+            var viewModel = new MovieFormViewModel(movie)
             {
-                Genres = _DBContext.Genres.ToList(),
-                Movie = movie
+                Genres = _DBContext.Genres.ToList()
             };
 
             return View("MovieForm", viewModel);
@@ -87,9 +86,19 @@ namespace Vidly.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                    Genres = _DBContext.Genres.ToList()
+                };
+                return View("MoviesFormForm", viewModel);
+            }
+
             // New movie
             if (movie.Id == 0)
             {
+                movie.DateAdded = DateTime.Now;
                 _DBContext.Movies.Add(movie);
             }
             // Existing movie
