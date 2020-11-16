@@ -14,5 +14,8 @@ namespace Vidly.Models
         public string Name { get; set; }
 
         public short SignUpFee { get; set; }
+
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYoGo = 1;
     }
 }

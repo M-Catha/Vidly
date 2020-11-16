@@ -20,9 +20,12 @@ namespace Vidly.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        [Required]
+        [Range(1, 20)]
         [DisplayName("Number in Stock")]
         public byte NumberInStock { get; set; }
 
+        [Required]
         [DisplayName("Release Date")]
         public DateTime? ReleaseDate { get; set; }
     }
