@@ -51,6 +51,7 @@ D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\roslyn\vbc.rsp
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\roslyn\VBCSCompiler.exe
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\roslyn\VBCSCompiler.exe.config
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Antlr3.Runtime.dll
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\AutoMapper.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\EntityFramework.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\EntityFramework.SqlServer.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Microsoft.AspNet.Identity.Core.dll
@@ -69,7 +70,10 @@ D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Microsoft.Owin.Security.T
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Microsoft.Web.Infrastructure.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Newtonsoft.Json.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Owin.dll
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Helpers.dll
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Http.dll
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Mvc.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Optimization.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Razor.dll
@@ -77,6 +81,10 @@ D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.WebPages.Deplo
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.WebPages.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.WebPages.Razor.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\WebGrease.dll
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\AutoMapper.xml
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Http.xml
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Helpers.xml
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Mvc.xml
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\System.Web.Optimization.xml
@@ -106,10 +114,10 @@ D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.Po
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenres.resources
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMoviesTable.resources
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.ChangeDataTypes.resources
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.MakeMovieFieldsRequired.resources
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.cache
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.pdb
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
-D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.MakeMovieFieldsRequired.resources
