@@ -46,9 +46,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var customers = _DBContext.Customers.Include(c => c.MembershipType).ToList();
-
-            return View(customers);
+            return View();
         }
 
         public ActionResult New()

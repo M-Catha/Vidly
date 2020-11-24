@@ -109,6 +109,7 @@ D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Microsoft.Owin.Security.T
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenres.resources
@@ -120,4 +121,3 @@ D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCo
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.dll
 D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.pdb
-D:\Documents\Class_Info\Projects\Vidly\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache

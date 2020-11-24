@@ -12,6 +12,8 @@ namespace Vidly.DTOs
 
         public bool IsSubscribedToNewsletter { get; set; }
 
+        public MembershipTypeDTO MembershipType { get; set; }
+
         public byte MembershipTypeId { get; set; }
 
         [Required(ErrorMessage = "Please enter customer's name")]

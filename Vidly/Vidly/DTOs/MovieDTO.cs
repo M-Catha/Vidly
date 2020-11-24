@@ -7,6 +7,8 @@ namespace Vidly.DTOs
     {
         public DateTime? DateAdded { get; set; }
 
+        public GenreDTO Genre { get; set; }
+
         [Required]
         public byte GenreId { get; set; }
 
