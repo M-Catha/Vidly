@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Vidly.Models.Movie>
+
+@{
+    ViewBag.Title = "Movies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+
+<table id="movies" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Movie</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Release Date</th>
+            <th scope="col">Number In Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            $("#movies").DataTable({
+                ajax: {
+                    url: "/api/movies",
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "name"
+                    },
+                    {
+                        data: "genre.name"
+                    },
+                    {
+                        data: "releaseDate",
+                        render: function (data, type, movie) {
+                            var date = new Date(movie.releaseDate);
+                            var dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+
+                            return date.toLocaleDateString(date, dateOptions);
+                        }
+                    },
+                    {
+                        data: "numberInStock"
+                    }
+                ]
+            });
+        });
+    </script>
+}
