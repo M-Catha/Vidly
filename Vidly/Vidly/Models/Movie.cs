@@ -20,6 +20,8 @@ namespace Vidly.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        public byte NumberAvailable { get; set; }
+
         [Required]
         [Range(1, 20)]
         [DisplayName("Number in Stock")]
